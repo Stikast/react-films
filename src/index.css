@@ -7,6 +7,12 @@ nav {
   padding: 1.5rem 0;
 }
 
+.brand-logo {
+  font-weight: 700;
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+
 .search {
   display: flex;
   align-items: center;
@@ -16,6 +22,17 @@ nav {
 .filres {
   display: flex;
   flex-direction: row;
+}
+
+.start-page-title {
+  font-weight: 700;
+  font-size: 55px;
+  letter-spacing: -3px;
+  line-height: 45px;
+}
+
+.start-page-title:not(:last-child) {
+  margin-top: 55px;
 }
 
 .movies {

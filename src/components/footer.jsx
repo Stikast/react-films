@@ -2,11 +2,8 @@ function Footer() {
   return (
     <footer className="page-footer  deep-purple lighten-2">
       <div className="footer-copyright">
-        <div className="container">
-          © {new Date().getFullYear()} Films
-          <a className="grey-text text-lighten-4 right" href="#!">
-            Repo
-          </a>
+        <div className="container center">
+          © {new Date().getFullYear()} Stikast
         </div>
       </div>
     </footer>

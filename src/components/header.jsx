@@ -2,12 +2,12 @@ function Header() {
   return (
     <nav className="deep-purple lighten-2">
       <div className="nav-wrapper">
-        <a href="#" className="brand-logo">
+        <p href="!#" className="brand-logo">
           Films
-        </a>
+        </p>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
           <li>
-            <a href="!#">Repo</a>
+            <a href="https://github.com/Stikast/react-films">Repo</a>
           </li>
         </ul>
       </div>
