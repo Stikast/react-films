@@ -5,7 +5,6 @@ import { Search } from './search';
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 
-/* eslint-disable react/prop-types */
 function Main() {
   const [isStartPage, setIsStartPage] = useState(true);
   const [movies, setMovies] = useState([]);

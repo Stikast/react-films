@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import { Movie } from './movie';
+import PropTypes from 'prop-types';
 
 function Movies({ movies = [], totalResults = 0 }) {
   const moviesList = movies.map((movie) => (
@@ -15,5 +15,10 @@ function Movies({ movies = [], totalResults = 0 }) {
     </>
   );
 }
+
+Movies.propTypes = {
+  movies: PropTypes.array.isRequired,
+  totalResults: PropTypes.number.isRequired,
+};
 
 export { Movies };

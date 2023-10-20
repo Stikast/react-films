@@ -1,13 +1,12 @@
-/* eslint-disable react/prop-types */
-function Movie(props) {
-  const {
-    Title: title,
-    Year: year,
-    Poster: img,
-    Type: info,
-    imbdID: id,
-  } = props;
+import PropTypes from 'prop-types';
 
+function Movie({
+  Title: title,
+  Year: year,
+  Poster: img,
+  Type: info,
+  imdbID: id,
+}) {
   return (
     <div id={id} className="card movie">
       <div className="card-image">
@@ -25,5 +24,13 @@ function Movie(props) {
     </div>
   );
 }
+
+Movie.propTypes = {
+  Title: PropTypes.string.isRequired,
+  Year: PropTypes.string.isRequired,
+  Poster: PropTypes.string.isRequired,
+  Type: PropTypes.string.isRequired,
+  imdbID: PropTypes.string.isRequired,
+};
 
 export { Movie };

@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
-// eslint-disable-next-line react/prop-types
 function Search({ searchMovies }) {
   const [search, setSearch] = useState({
     title: '',
@@ -82,5 +82,9 @@ function Search({ searchMovies }) {
     </div>
   );
 }
+
+Search.propTypes = {
+  searchMovies: PropTypes.func.isRequired,
+};
 
 export { Search };
